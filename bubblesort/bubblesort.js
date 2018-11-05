@@ -1,6 +1,7 @@
 function bubbleSort(array) {
   let sorted = false;
   let j = 0;
+
   while (!sorted) {
     let isSorted = true;
     for (let i = 0; i < array.length - j - 1; i++) {
@@ -12,6 +13,7 @@ function bubbleSort(array) {
     j += 1;
     sorted = isSorted;
   }
+  return array;
 }
 
 swap = function(i, j) {
